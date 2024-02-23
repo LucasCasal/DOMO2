@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Domofront Challenge</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    /* Estilos para el botón de scroll hacia arriba */
-    .scroll-to-top {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domofront Challenge</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Estilos para el botón de scroll hacia arriba */
+      .scroll-to-top {
         position: fixed;
         bottom: 40px;
         right: 40px;
@@ -22,246 +31,479 @@
         z-index: 1000;
         opacity: 0; /* Inicialmente oculto */
         transition: opacity 0.4s ease-in-out;
-    }
-
-    .scroll-to-top:hover {
-        background-color: #555;
-    }
-</style>
-</head>
-<body style="margin: 0; padding: 0; overflow-x: hidden;">
-
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Domofront</a>
-  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <button class="btn btn-light me-md-2" type="button">Sign in</button>
-    <button class="btn btn-light" style="margin-left: 10px" type="button">Sign up</button>
-  </div>
-</nav>
-
-<div id="Main" class="container-fluid cream-container">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <div class="d-flex align-items-center">
-        <p class="star" style="font-size: 36px; margin-right: 32px">&#9733;</p>
-        <div class="brown-box" style="background-color: rgb(92, 15, 15); padding: 10px 25px; border-radius: 5px; width: 90px;">
-          <p style="color: white">Main</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="d-flex justify-content-end">
-        <button class="btn btn-outline-info scroll-btn" style="margin-right: 10px" data-target="#home">Home</button>
-        <button class="btn btn-outline-info scroll-btn" style="margin-right: 10px" data-target="#services">Services</button>
-        <button class="btn btn-outline-info scroll-btn" style="margin-right: 10px" data-target="#info">Info</button>
-        <button class="btn btn-outline-info scroll-btn" data-target="#contact">Contact</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="home" class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="circle" style="width: 100px; height: 100px">
-          <span class="letter" style="font-size: 35px">A</span>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="hero-content" style="margin-top: 20px; margin-left: -200px">
-          <h2 style="color: #005d7f; margin-left: -200px">Main Hero Content</h2>
-          <hr class="brown-line" style="margin-left: -200px;">
-          <p style="margin-left: -200px; margin-bottom: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: -200px">More</button>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 10px">↓</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="services" class="container-fluid">>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="service-item">
-          <div class="circle">
-            <span class="number">1</span>
-          </div>
-          <h3>Title 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          <button type="button" class="btn btn-secondary" style="margin-left: 3.0cm;">→</button>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="service-item">
-          <div class="circle">
-            <span class="number">2</span>
-          </div>
-          <h3>Title 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          <button type="button" class="btn btn-secondary" style="margin-left: 3.0cm;">→</button>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="service-item">
-          <div class="circle">
-            <span class="number">3</span>
-          </div>
-          <h3>Title 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          <button type="button" class="btn btn-secondary" style="margin-left: 3.0cm;">→</button>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="service-item">
-          <div class="circle">
-            <span class="number">4</span>
-          </div>
-          <h3>Title 4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          <button type="button" class="btn btn-secondary" style="margin-left: 3.0cm;">→</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="info" class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="circle" style="width: 100px; height: 100px; float: left;">
-          <span class="letter" style="font-size: 35px">B</span>
-        </div>
-        <div class="hero-content" style="margin-top: 20px;">
-          <h2 style="color: #005d7f; margin-left: 20px;">INFO 2</h2>
-          <hr class="brown-line" style="margin-left: 100px;">
-          <p style="margin-left: 20px; margin-bottom: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 20px;">More</button>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 10px;">↓</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img src="fotos/info_b.jpg" alt="info b" style="width: 70%; float: right;">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="info C" class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="circle" style="width: 100px; height: 100px; float: left;">
-          <span class="letter" style="font-size: 35px">C</span>
-        </div>
-        <div class="hero-content" style="margin-top: 20px;">
-          <h2 style="color: #005d7f; margin-left: 20px;">INFO 3</h2>
-          <hr class="brown-line" style="margin-left: 100px;">
-          <p style="margin-left: 20px; margin-bottom: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 20px;">More</button>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 10px;">↓</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img src="fotos/info_c.jpg" alt="info c" style="width: 70%; float: right;">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="info D" class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="circle" style="width: 100px; height: 100px; float: left;">
-          <span class="letter" style="font-size: 35px">D</span>
-        </div>
-        <div class="hero-content" style="margin-top: 20px;">
-          <h2 style="color: #005d7f; margin-left: 20px;">INFO 4</h2>
-          <hr class="brown-line" style="margin-left: 100px;">
-          <p style="margin-left: 20px; margin-bottom: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 20px;">More</button>
-          <button type="button" class="btn btn-outline-secondary" style="margin-top: 20px; margin-left: 10px;">↓</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img src="fotos/info_d.jpg" alt="info_d" style="width: 70%; float: right;">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="contact" class="section" style="background-color: #a4a7aa; color: white; width: 100%; height: 90%;">
-  <div class="container">
-    <h2 style="font-weight: bold; color: #005d7f;">Contact</h2>
-    <div class="row">
-      <div class="col-md-6" style="color: white;">
-        <i class="fa-brands fa-whatsapp" style="color: white; font-size: 24px;"></i> <span>+54 9 11 5459-2527</span><br />
-        <i class="fa-regular fa-envelope" style="color: white; font-size: 24px;"></i> <span>dustwestcool@gmail.com</span>
-      </div>
-      <div class="col-md-6" style="color: white; text-align: right; margin-top: -1cm;">
-        <a href="https://www.linkedin.com/in/lucas-casal-/" style="color: white; font-size: 24px; margin-top: -1cm;">Linkedin <i class="fa-brands fa-linkedin" style="color: white; font-size: 24px;"></i></a><br />
-        <a href="https://github.com/LucasCasal" style="color: white; font-size: 24px; margin-top: -1cm;">Github <i class="fa-brands fa-github" style="color: white; font-size: 24px;"></i></a><br />
-        <a href="https://www.instagram.com/_lucas_casal_/" style="color: white; font-size: 24px; margin-top: -1cm;">Instagram <i class="fa-brands fa-instagram" style="color: white; font-size: 24px;"></i></a><br />
-        <a href="https://www.facebook.com/escorpio.lux/" style="color: white; font-size: 24px; margin-top: -1cm;">Facebook <i class="fa-brands fa-facebook" style="color: white; font-size: 24px;"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer style="
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 20px;">
-  <p>Lucas Casal Goncalves Do Rego - 2024</p>
-  <p>Domo Challenge</p>
-</footer>
-<!-- Botón de scroll hacia arriba -->
-<button class="scroll-to-top" onclick="scrollToTop()">
-  <i class="fas fa-arrow-up"></i> <!-- Icono de flecha hacia arriba -->
-</button>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-
-<script>
-  // Función para desplazarse suavemente hacia arriba //
-  function scrollToTop() {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
-  }
-
-  // Función para mostrar/ocultar el botón de scroll basado en la posición de scroll //
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-      var scrollToTopBtn = document.querySelector(".scroll-to-top");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollToTopBtn.style.opacity = "1"; // Mostrar el botón
-      } else {
-          scrollToTopBtn.style.opacity = "0"; // Ocultar el botón
       }
-  }
-</script>
 
-<script>
-  document.querySelectorAll('.scroll-btn').forEach(item => {
-    item.addEventListener('click', function() {
-      const target = this.getAttribute('data-target');
-      document.querySelector(target).scrollIntoView({
-        behavior: 'smooth'
+      .scroll-to-top:hover {
+        background-color: #555;
+      }
+    </style>
+    <style>
+      /* Color del navbar */
+      .navbar-custom {
+        background-color: #6184a4; /* Celeste oscuro */
+      }
+
+      /* Color de los botones */
+      .btn-custom {
+        background-color: #a9caec; /* Celeste claro */
+        border-color: #8cbdf1; /* Borde del mismo color que el fondo */
+        color: #ffffff; /* Texto blanco */
+      }
+
+      /* Hover y Focus */
+      .btn-custom:hover,
+      .btn-custom:focus {
+        background-color: #4c93d6; /* Cambio de color al pasar el mouse o enfocar */
+        border-color: #4c93d6; /* Cambio de color del borde */
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0; overflow-x: hidden">
+    <nav class="navbar navbar-dark navbar-custom">
+      <a class="navbar-brand" style="margin-left: 70px" href="#">Domofront</a> </style>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin-left: -3cm;">
+          <button class="btn btn-light btn-custom me-md-2" type="button" style="margin-right: 1.5cm;">
+              Sign in
+          </button>
+          <button class="btn btn-light btn-custom" style="margin-right: 0.5cm;" type="button">
+              Sign up
+          </button>
+      </div>
+  </nav>
+
+
+    <div id="Main" class="container-fluid cream-container" style="background-color: rgb(241, 238, 234);padding-right: 155px">
+      <div class="row align-items-right">
+        <div class="col-md-6">
+          <div class="d-flex align-items-right" style="padding-right: 100px;">
+            <p class="star" style="font-size: 30px; padding-right: 200px">
+              &#9733;
+            </p>
+            <div
+              class="brown-box"
+              style="
+                background-color: rgb(92, 15, 15);
+                padding: 10px 28px;
+                border-radius: 5px;
+                width: 70px;
+                height: 48px;
+                padding-right: 75px;
+              "
+            >
+              <p style="color: white">Main</p>
+            </div>
+          </div>
+      </div>
+
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+            <button
+              class="btn btn-outline-info scroll-btn"
+              style="margin-left: 80px"
+              data-target="#home"
+            >
+              Home
+            </button>
+            <button
+              class="btn btn-outline-info scroll-btn"
+              style="margin-left: 80px"
+              data-target="#services"
+            >
+              Services
+            </button>
+            <button
+              class="btn btn-outline-info scroll-btn"
+              style="margin-left: 80px"
+              data-target="#info"
+            >
+              Info
+            </button>
+            <button
+              class="btn btn-outline-info scroll-btn"
+              style="margin-left: 70px"
+              data-target="#contact"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="home" class="section" style="background-color: #e5e5f7;">
+      <div class="container">
+        <div class="row align-items-start"> <!-- Cambiamos align-items-center por align-items-start para alinear la "A" en la parte superior -->
+          <div class="col-md-6">
+            <div class="circle" style="width: 100px; height: 100px; background-color: #e6e6fa; border: 4px solid #8b4513; display: flex; justify-content: center; align-items: left; margin-right: 20px;"> <!-- Añadimos un margen derecho para separar la "A" del contenido -->
+              <span class="letter" style="font-size: 50px; color: #562706;">A</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="hero-content" style="margin-top: 20px; text-align: left;"> <!-- Alineamos el contenido a la izquierda -->
+              <h2 style="color: #6184a4; margin-left: -420px;">Main Hero Content</h2>
+              <hr class="brown-line" style="margin-left: -420px; margin-top: 10px; border-color: #8b4513; width: 90px;">
+              <p style="color: #8b4513; margin-left: -420px; margin-top: 10px; text-align: left;">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <div style="display: flex; align-items: center; margin-top: 20px;">
+                <button type="button" class="btn btn-info" style="margin-left: -420px; background-color: rgb(92, 15, 15);">
+                    More
+                </button>
+                <button type="button" class="btn btn-info" style="background-color: rgb(92, 15, 15); margin-left: 1cm;">
+                    ↓
+                </button>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="container-fluid">
+      >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="circle">
+                <span class="number">1</span>
+              </div>
+              <h3>Title 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                style="margin-left: 3cm"
+              >
+                →
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="circle">
+                <span class="number">2</span>
+              </div>
+              <h3>Title 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                style="margin-left: 3cm"
+              >
+                →
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="circle">
+                <span class="number">3</span>
+              </div>
+              <h3>Title 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                style="margin-left: 3cm"
+              >
+                →
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="circle">
+                <span class="number">4</span>
+              </div>
+              <h3>Title 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                style="margin-left: 3cm"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info" class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div
+              class="circle"
+              style="width: 100px; height: 100px; float: left"
+            >
+              <span class="letter" style="font-size: 35px">B</span>
+            </div>
+            <div class="hero-content" style="margin-top: 20px">
+              <h2 style="color: #005d7f; margin-left: 20px">INFO 2</h2>
+              <hr class="brown-line" style="margin-left: 100px" />
+              <p style="margin-left: 20px; margin-bottom: 10px">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                style="margin-top: 20px; margin-left: 20px"
+              >
+                More
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                style="margin-top: 20px; margin-left: 10px"
+              >
+                ↓
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="fotos/info_b.jpg"
+              alt="info b"
+              style="width: 70%; float: right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info C" class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div
+              class="circle"
+              style="width: 100px; height: 100px; float: left"
+            >
+              <span class="letter" style="font-size: 35px">C</span>
+            </div>
+            <div class="hero-content" style="margin-top: 20px">
+              <h2 style="color: #005d7f; margin-left: 20px">INFO 3</h2>
+              <hr class="brown-line" style="margin-left: 100px" />
+              <p style="margin-left: 20px; margin-bottom: 10px">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                style="margin-top: 20px; margin-left: 20px"
+              >
+                More
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                style="margin-top: 20px; margin-left: 10px"
+              >
+                ↓
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="fotos/info_c.jpg"
+              alt="info c"
+              style="width: 70%; float: right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info D" class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div
+              class="circle"
+              style="width: 100px; height: 100px; float: left"
+            >
+              <span class="letter" style="font-size: 35px">D</span>
+            </div>
+            <div class="hero-content" style="margin-top: 20px">
+              <h2 style="color: #005d7f; margin-left: 20px">INFO 4</h2>
+              <hr class="brown-line" style="margin-left: 100px" />
+              <p style="margin-left: 20px; margin-bottom: 10px">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                style="margin-top: 20px; margin-left: 20px"
+              >
+                More
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                style="margin-top: 20px; margin-left: 10px"
+              >
+                ↓
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="fotos/info_d.jpg"
+              alt="info_d"
+              style="width: 70%; float: right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="contact"
+      class="section"
+      style="background-color: #a4a7aa; color: white; width: 100%; height: 90%"
+    >
+      <div class="container">
+        <h2 style="font-weight: bold; color: #005d7f">Contact</h2>
+        <div class="row">
+          <div class="col-md-6" style="color: white">
+            <i
+              class="fa-brands fa-whatsapp"
+              style="color: white; font-size: 24px"
+            ></i>
+            <span>+54 9 11 5459-2527</span><br />
+            <i
+              class="fa-regular fa-envelope"
+              style="color: white; font-size: 24px"
+            ></i>
+            <span>dustwestcool@gmail.com</span>
+          </div>
+          <div
+            class="col-md-6"
+            style="color: white; text-align: right; margin-top: -1cm"
+          >
+            <a
+              href="https://www.linkedin.com/in/lucas-casal-/"
+              style="color: white; font-size: 24px; margin-top: -1cm"
+              >Linkedin
+              <i
+                class="fa-brands fa-linkedin"
+                style="color: white; font-size: 24px"
+              ></i></a
+            ><br />
+            <a
+              href="https://github.com/LucasCasal"
+              style="color: white; font-size: 24px; margin-top: -1cm"
+              >Github
+              <i
+                class="fa-brands fa-github"
+                style="color: white; font-size: 24px"
+              ></i></a
+            ><br />
+            <a
+              href="https://www.instagram.com/_lucas_casal_/"
+              style="color: white; font-size: 24px; margin-top: -1cm"
+              >Instagram
+              <i
+                class="fa-brands fa-instagram"
+                style="color: white; font-size: 24px"
+              ></i></a
+            ><br />
+            <a
+              href="https://www.facebook.com/escorpio.lux/"
+              style="color: white; font-size: 24px; margin-top: -1cm"
+              >Facebook
+              <i
+                class="fa-brands fa-facebook"
+                style="color: white; font-size: 24px"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 20px;
+      "
+    >
+      <p>Lucas Casal Goncalves Do Rego - 2024</p>
+      <p>Domo Challenge</p>
+    </footer>
+    <!-- Botón de scroll hacia arriba -->
+    <button class="scroll-to-top" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+      <!-- Icono de flecha hacia arriba -->
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      // Función para desplazarse suavemente hacia arriba //
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Función para mostrar/ocultar el botón de scroll basado en la posición de scroll //
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var scrollToTopBtn = document.querySelector(".scroll-to-top");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.opacity = "1"; // Mostrar el botón
+        } else {
+          scrollToTopBtn.style.opacity = "0"; // Ocultar el botón
+        }
+      }
+    </script>
+
+    <script>
+      document.querySelectorAll(".scroll-btn").forEach((item) => {
+        item.addEventListener("click", function () {
+          const target = this.getAttribute("data-target");
+          document.querySelector(target).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
-    });
-  });
-</script>
-</body>
+    </script>
+  </body>
 </html>
