@@ -1,0 +1,148 @@
+
+.body {
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cream-container {
+    background-color: #f4e9b7;
+    padding: 20px;
+}
+
+
+.brown-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(92, 15, 15);
+    float: right;
+}
+
+.section {
+    height: 100vh;
+    padding-top: 50px;
+    /* To account for navbar */
+}
+
+.scroll-btn {
+    margin-right: 10px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    margin-left: 20px;
+    /* Espacio entre el círculo y el título */
+}
+
+.letter {
+    font-size: 34px;
+    /* Tamaño de la letra "A" reducido */
+}
+
+.section h2 {
+    color: #005D7F;
+    /* Color del título */
+}
+
+.service-item {
+    background-color: #f4e9b7;
+    /* Fondo celeste oscuro */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(91, 19, 19);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.number {
+    color: white;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.info-row {
+    background-color: #cece94;
+    /* Fondo color crema */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(90, 17, 17);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    float: left;
+}
+
+.letter {
+    color: white;
+    font-size: 2em;
+}
+
+h3 {
+    color: #410f0f;
+    /* Color marrón */
+}
+
+p {
+    color: #410f0f;
+    /* Color marrón */
+}
+
+.brown-line {
+    border: 4px solid #410f0f;
+    width: 60%;
+
+}
+
+.info-image {
+    float: right;
+    /* Estilos para tu imagen */
+}
+
+.img{
+    width: 70%;
+}
+
+.a{
+font-size: larger;
+font-weight: bold;
+}
