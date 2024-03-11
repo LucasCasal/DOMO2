@@ -1,6 +1,7 @@
 .title {
-    margin-rights: 8cm;
+    margin-right: 8cm;
 }
+
 .body {
     font-family: Arial, sans-serif;
     min-height: 100%;
@@ -8,10 +9,9 @@
     width: 100%;
 }
 
-.star{
+.star {}
 
-}
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -67,8 +67,7 @@
 }
 
 .service-item {
-    background-color: #f4e9b7;
-    /* Fondo celeste oscuro */
+
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -90,8 +89,8 @@
     font-size: 1.5em;
 }
 
-h3 {
-    color: white;
+.h3 {
+    color: #562706;
 }
 
 p {
@@ -99,8 +98,6 @@ p {
 }
 
 .info-row {
-    background-color: #cbcb0c;
-    /* Fondo color crema */
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -120,6 +117,7 @@ p {
 .letter {
     color: white;
     font-size: 2em;
+    align-content: center;
 }
 
 h3 {
@@ -143,11 +141,76 @@ p {
     /* Estilos para tu imagen */
 }
 
-.img{
+.img {
     width: 60%;
 }
 
-.a{
-font-size: larger;
-font-weight: bold;
+/* Estilos para info B */
+#info_B {
+    background-color: rgb(230, 230, 222);
+}
+
+#info h2 {
+    color: #005d7f;
+}
+
+#info .brown-line {
+    color: brown;
+    /* Color de la línea marrón */
+}
+
+/* Estilos para info C */
+#info_C {
+    background-color: #d7c9ba;
+    /* Beige oscuro */
+}
+
+/* Estilos para info D */
+#info_D {
+    background-color: #fcf8e8;
+    /* Crema */
+}
+
+/* Estilos para los botones */
+.btn {
+    color: white;
+    /* Letras en blanco para todos los botones */
+}
+
+.btn-outline-secondary {
+    color: rgb(255, 255, 255);
+    /* Color de línea marrón para los botones de "More" y "↓" */
+}
+
+</style>.a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.bluesky-bg {
+    background-color: #4a6c92;
+}
+
+.light-brown-bg {
+    background-color: #7c8896;
+    /* Marrón claro */
+}
+
+.beige-bg {
+    background-color: #c0cad2;
+    /* Beige */
+}
+
+.cream-bg {
+    background-color: #859eb3;
+    /* Color crema */
+}
+
+.letter {
+    margin-bottom: 10px;
+    /* Agregar margen superior de 10px a la letra "B" */
+}
+
+.→ {
+    color: #562706;
 }
