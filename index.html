@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domofront Challenge </title>
-   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -58,9 +62,11 @@
         border-color: #a9caec; /* Cambio de color del borde */
       }
     </style>
+
+    
   </head>
 
-  <body style="margin: 0; padding: 0; overflow-x: hidden">
+  <body style="margin: 0; padding: 0; overflow-x: hidden; class=lora-uniquifier">
     <nav class="navbar navbar-dark navbar-custom">
       <a class="navbar-brand" style="margin-left: 80px" href="#">Domofront</a> </style>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin-left: -6cm;">
@@ -78,17 +84,17 @@
       <div class="row align-items-right">
         <div class="col-md-6">
           <div class="d-flex align-items-right">
-            <p class="star" style="font-size: 30px; margin-right: 50px; ">
+            <p class="star" style="font-size: 30px; margin-left: 50px; ">
               &#9733;
             </p>
             <div
               class="brown-box"
               style="
                 background-color: rgb(92, 15, 15);
-                padding: 10px 18px;
+                padding: 8px 15px;
                 border-radius: 4px;
-                width: 65px;
-                height: 43px;
+                width: 55px;
+                height: 42px;
                 padding-right: 55px;
               "
             >
@@ -194,59 +200,72 @@
 </style>
 
 <div id="services" class="container-fluid">
-  <div class="container">
-      <div class="row">
-          <div class="col-md custom-col bluesky-bg">
-              <div class="service-item">
-                <div class="circle" style="width: 100px; height: 100px; background-color: #4a6c92; border: 4px solid #e6e6fa; display: flex; justify-content: center; align-items: left; margin-right: 20px;"> <!-- Añadimos un margen derecho para separar la "A" del contenido -->
-                  <span class="letter" style="font-size: 40px; color: #e6e6fa;">1</span>
-                </div>
-                  <h3 style="color: white;">Title 1</h3>
-                  <p>Lorem ipsum dolor sit .</p>
-                  <button type="button" class="btn btn-secondary" style="background-color: #4a6c92 ; border: 1.5px solid #562706 ; color: #562706;">
-                      →
-                  </button>
-              </div>
+  <div class="px-0">
+    <div class="row">
+      <div class="col-md custom-col bluesky-bg">
+        <div class="service-item">
+          <h3 style="color: white; text-align: left;">Title 1</h3>
+          <p style="text-align: left;">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, 
+            eiusmod tempor incididunt 
+            labore dolore magna aliqua.
+          </p>
+          <div class="circle" style="width: 80px; height: 80px; background-color: #4a6c92; border: 4px solid #e6e6fa; display: flex; justify-content: center; align-items: left; margin-top: 20px; margin-left: 0;">
+            <span class="letter" style="font-size: 40px; color: #e6e6fa;">1</span>
           </div>
-          <div class="col-md custom-col light-brown-bg">
-              <div class="service-item">
-                <div class="circle" style="width: 100px; height: 100px; background-color: #7c8896; border: 4px solid #562706; display: flex; justify-content: center; align-items: left; margin-right: 20px;"> <!-- Añadimos un margen derecho para separar la "A" del contenido -->
-                  <span class="letter" style="font-size: 40px; color: #562706;">2</span>
-                </div>
-                  <h3 style="color: white;">Title 2</h3>
-                  <p>Lorem ipsum dolor sit.</p>
-                  <button type="button" class="btn btn-secondary" style="background-color: #7c8896 ; border: 1.5px solid #562706 ; color: #562706;">
-                    →
-                </button>
-              </div>
-          </div>
-          <div class="col-md custom-col beige-bg">
-              <div class="service-item">
-                <div class="circle" style="width: 100px; height: 100px; background-color: #c0cad2; border: 4px solid #562706; display: flex; justify-content: center; align-items: left; margin-right: 20px;"> <!-- Añadimos un margen derecho para separar la "A" del contenido -->
-                  <span class="letter" style="font-size: 40px; color: #562706;">3</span>
-                </div>
-                  <h3>Title 3</h3>
-                  <p>Lorem ipsum dolor sit.</p>
-                  <button type="button" class="btn btn-secondary" style="background-color: #c0cad2 ; border: 1.5px solid #562706 ; color: #562706;">
-                    →
-                </button>
-              </div>
-          </div>
-          <div class="col-md custom-col cream-bg">
-              <div class="service-item">
-                <div class="circle" style="width: 100px; height: 100px; background-color: #859eb3; border: 4px solid #562706; display: flex; justify-content: center; align-items: left; margin-right: 20px;"> <!-- Añadimos un margen derecho para separar la "A" del contenido -->
-                  <span class="letter" style="font-size: 40px; color: #562706;">4</span>
-                </div>
-                  <h3 style="color: white;">Title 4</h3>
-                  <p>Lorem ipsum dolor sit .</p>
-                  <button type="button" class="btn btn-secondary" style="background-color: #859eb3 ; border: 1.5px solid #562706 ; color: #562706;">
-                    →
-                </button>
-              </div>
-          </div>
+          <button type="button" class="btn btn-secondary" style="background-color: #4a6c92; border: 1.5px solid #562706; color: #562706; margin-left: 150px;">→</button>
+        </div>
       </div>
+      <div class="col-md custom-col light-brown-bg">
+        <div class="service-item">
+          <h3 style="color: white; text-align: left;">Title 2</h3>
+          <p style="text-align: left;">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, 
+            eiusmod tempor incididunt 
+            labore dolore magna aliqua.
+          </p>
+          <div class="circle" style="width: 80px; height: 80px; background-color: #7c8896; border: 4px solid #562706; display: flex; justify-content: center; align-items: left; margin-right: 20px; margin-top: 20px; margin-left: 0;">
+            <span class="letter" style="font-size: 40px; color: #562706;">2</span>
+          </div>
+          <button type="button" class="btn btn-secondary" style="background-color: #7c8896; border: 1.5px solid #562706; color: #562706; margin-left: 150px;">→</button>
+        </div>
+      </div>
+      <div class="col-md custom-col beige-bg">
+        <div class="service-item">
+          <h3 style="text-align: left;">Title 3</h3>
+          <p style="text-align: left;">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, 
+            eiusmod tempor incididunt 
+            labore dolore magna aliqua.
+          </p>
+          <div class="circle" style="width: 80px; height: 80px; background-color: #c0cad2; border: 4px solid #562706; display: flex; justify-content: center; align-items: left; margin-top: 20px; margin-left: 0;">
+            <span class="letter" style="font-size: 40px; color: #562706;">3</span>
+          </div>
+          <button type="button" class="btn btn-secondary" style="background-color: #c0cad2; border: 1.5px solid #562706; color: #562706; margin-left: 150px;">→</button>
+        </div>
+      </div>
+      <div class="col-md custom-col cream-bg">
+        <div class="service-item">
+          <h3 style="color: white; text-align: left;">Title 4</h3>
+          <p style="text-align: left;">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, 
+            eiusmod tempor incididunt 
+            labore dolore magna aliqua.
+          </p>
+          <div class="circle" style="width: 80px; height: 80px; background-color: #859eb3; border: 4px solid #562706; display: flex; justify-content: center; align-items: left; margin-top: 20px; margin-left: 0;">
+            <span class="letter" style="font-size: 40px; color: #562706;">4</span>
+          </div>
+          <button type="button" class="btn btn-secondary" style="background-color: #859eb3; border: 1.5px solid #562706; color: #562706; margin-left: 150px;">→</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
 
 
 <div id="info_B" class="section">
@@ -330,82 +349,47 @@
   </div>
 </div>
 
-    <div
-      id="contact"
-      class="section"
-      style="background-color: #6184a4; color: white; width: 100%; height: 90%"
-    >
-      <div class="container">
-        <h2 style="font-weight: bold; color: #005d7f">Contact</h2>
-        <div class="row">
-          <div class="col-md-6" style="color: white">
-            <i
-              class="fa-brands fa-whatsapp"
-              style="color: white; font-size: 24px"
-            ></i>
-            <span>+54 9 11 5459-2527</span><br />
-            <i
-              class="fa-regular fa-envelope"
-              style="color: white; font-size: 24px"
-            ></i>
-            <span>dustwestcool@gmail.com</span>
-          </div>
-          <div
-            class="col-md-6"
-            style="color: white; text-align: right; margin-top: -1cm"
-          >
-            <a
-              href="https://www.linkedin.com/in/lucas-casal-/"
-              style="color: white; font-size: 24px; margin-top: -1cm"
-              >Linkedin
-              <i
-                class="fa-brands fa-linkedin"
-                style="color: white; font-size: 24px"
-              ></i></a
-            ><br />
-            <a
-              href="https://github.com/LucasCasal"
-              style="color: white; font-size: 24px; margin-top: -1cm"
-              >Github
-              <i
-                class="fa-brands fa-github"
-                style="color: white; font-size: 24px"
-              ></i></a
-            ><br />
-            <a
-              href="https://www.instagram.com/_lucas_casal_/"
-              style="color: white; font-size: 24px; margin-top: -1cm"
-              >Instagram
-              <i
-                class="fa-brands fa-instagram"
-                style="color: white; font-size: 24px"
-              ></i></a
-            ><br />
-            <a
-              href="https://www.facebook.com/escorpio.lux/"
-              style="color: white; font-size: 24px; margin-top: -1cm"
-              >Facebook
-              <i
-                class="fa-brands fa-facebook"
-                style="color: white; font-size: 24px"
-              ></i
-            ></a>
-          </div>
-        </div>
+<div
+id="contact"
+class="section"
+style="background-color: #6184a4; color: white; width: 100%; height: 90%"
+>
+<div class="container" style="margin-bottom: 50px;">
+  <h2 style="font-weight: bold; color: white">Contact</h2>
+  <div class="row">
+    <div class="col-md-6" style="color: white">
+      <i class="fa-brands fa-whatsapp" style="color: white; font-size: 24px"></i>
+      <span>+54 9 11 5459-2527</span><br />
+      <i class="fa-regular fa-envelope" style="color: white; font-size: 24px; margin-top: 10px;"></i>
+      <span style="display: inline-block; margin-left: 5px;">dustwestcool@gmail.com</span>
+    </div>
+    
+    <div class="col-md-6" style="color: white; text-align: right;">
+      <h3 style="margin-bottom: 10px; color: white;">Social Media</h3>
+      <div style="display: flex; justify-content: flex-end;">
+        <a href="https://www.linkedin.com/in/lucas-casal-/" style="color: white; font-size: 24px; margin-right: 25px;">
+          <i class="fa-brands fa-linkedin" style="color: white; font-size: 24px"></i>
+        </a>
+        <a href="https://github.com/LucasCasal" style="color: white; font-size: 24px; margin-right: 25px;">
+          <i class="fa-brands fa-github" style="color: white; font-size: 24px"></i>
+        </a>
+        <a href="https://www.instagram.com/_lucas_casal_/" style="color: white; font-size: 24px; margin-right: 25px;">
+          <i class="fa-brands fa-instagram" style="color: white; font-size: 24px"></i>
+        </a>
+        <a href="https://www.facebook.com/escorpio.lux/" style="color: white; font-size: 24px;">
+          <i class="fa-brands fa-facebook" style="color: white; font-size: 24px"></i>
+        </a>
       </div>
     </div>
+  </div>
+</div>
 
-    <footer
-      style="
-        background-color: rgb(150, 143, 136);
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 6px;
-      "
-    >
-      <p>Lucas Casal Goncalves Do Rego - 2024</p>
-      <p>Domo Challenge</p>
-    </footer>
+
+<footer style="background-color: rgb(150, 143, 136); color: rgb(0, 0, 0); text-align: left; padding: 8px 55px;">
+  <p style="margin-left: 20px;">Lucas Casal Goncalves Do Rego - 2024</p>
+  <p style="margin-left: 20px;">Domo Challenge</p>
+</footer>
+
     <!-- Botón de scroll hacia arriba -->
     <button class="scroll-to-top" onclick="scrollToTop()">
       <i class="fas fa-arrow-up"></i>
