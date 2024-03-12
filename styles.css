@@ -214,3 +214,16 @@ p {
 .→ {
     color: #562706;
 }
+/* Ejemplo de media query para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas pequeñas */
+  }
+  
+  /* Ejemplo de media query para pantallas medianas (tabletas) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+  }
+  
+  /* Estilos base para pantallas grandes (computadoras) */
+  /* No necesitas una media query para esto, ya que será el estilo por defecto */
+  
